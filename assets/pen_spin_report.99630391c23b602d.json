@@ -1,0 +1,29 @@
+{
+  "task": "two_turn_hold",
+  "robot": "RobotEra XHand1 Pro",
+  "dof": 21,
+  "simulator": "Isaac Lab",
+  "controller": "PPO + fixed searched finger adjustment + supervised stop at 2.05 turns",
+  "validated": false,
+  "evaluation": {
+    "successful_episodes": 4,
+    "completed_episodes": 4335,
+    "success_rate": 0.000922722029988466,
+    "seed": 20261025,
+    "num_envs": 1024,
+    "scope": "One fixed initial grasp plus joint noise."
+  },
+  "selected_episode": {
+    "start_frame": 0,
+    "end_frame": 898,
+    "hold_start_frame": 486,
+    "net_turns": 2.058500051498413,
+    "recording_ends_before_reset": true,
+    "source_environment": 856,
+    "source_batch_size": 1024,
+    "selection": "Selected successful independent evaluation episode; video rendered from recorded states."
+  },
+  "checkpoint_sha256": "97c6fe77f45879834f62a9668370e97df0354ce79add0c98baca21d98f1a8edb",
+  "replay_archive_sha256": "e397df659e98e27ed1835d379c61b2239bfc83fbff6e0ee4c957337eef4bd311",
+  "video_sha256": "dcfd0db0a127acb59c759daaafbc4b738464808eba6d54724ef2a19ea885714e"
+}

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>xhand pro · 两圈转笔</title>
+  <link rel="stylesheet" href="assets/style.06da17a1bbf84503.css">
+<link rel="canonical" href="https://evan715823.github.io/xhand-pen-spin-demo/">
+</head>
+<body>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="#main">xhand pro</a><nav aria-label="页面导航"><a href="#details" id="open-details">实验信息</a><a id="download-report" download="pen_spin_report.json">下载报告</a><button id="language-toggle" type="button" aria-label="Switch to English">EN</button></nav></div></header>
+  <main id="main">
+    <section class="hero" aria-labelledby="page-title"><div class="hero-top"><div><p class="product-name">xhand pro · 21 DOF</p><h1 id="page-title">灵巧手两圈转笔</h1><p class="subtitle">Isaac Lab 仿真回放</p></div><div class="readiness"><span>两圈实验 · 成功样例</span><button id="show-result" disabled>查看最终姿态 <span aria-hidden="true">↗</span></button></div></div>
+      <dl class="summary-metrics" aria-label="实验结果"><div><dt>仿真用时</dt><dd id="summary-duration">29.93 s</dd></div><div><dt>展示回合净旋转</dt><dd id="summary-turns">2.059</dd></div><div><dt>独立评估成功回合</dt><dd>4 / 4335</dd></div></dl>
+    </section>
+    <section class="player" aria-label="两圈转笔三维回放">
+      <div class="player-toolbar"><div class="mode-tabs" role="tablist" aria-label="回放方式"><button id="replay-tab" role="tab" aria-selected="true" aria-controls="replay-viewer" type="button">三维</button><button id="video-tab" role="tab" aria-selected="false" aria-controls="video-viewer" tabindex="-1" type="button">视频</button></div><a id="video-download" download>下载视频 ↓</a></div>
+      <div id="replay-viewer" role="tabpanel" aria-labelledby="replay-tab">
+        <div id="replay-stage" class="viewport"><canvas id="replay-canvas" tabindex="0" aria-label="可拖动旋转视角的原始仿真记录"></canvas><div id="replay-loading">加载模型与轨迹…</div>
+          <div class="viewbar" role="group" aria-label="视角"><button data-replay-view="perspective" aria-pressed="true">斜视</button><button data-replay-view="top" aria-pressed="false">俯视</button><button data-replay-view="side" aria-pressed="false">侧视</button></div>
+          <div class="pen-readout"><span>当前圈数</span><strong id="replay-turns">0.000</strong></div><div class="scene-bottom"><span id="replay-phase" class="scene-caption">正在加载</span><span class="scene-options">拖动旋转 · 滚轮缩放</span></div>
+        </div>
+        <div class="transport"><div class="time-row"><output id="replay-time">0.00 / 29.93 s</output><input id="replay-timeline" type="range" min="0" max="898" value="0" step="1" aria-label="回放时间轴" disabled></div><div class="control-row"><div class="play-controls"><button id="replay-restart" class="icon-button" title="从头播放" aria-label="从头播放" disabled>↤</button><button id="replay-prev" class="icon-button" title="上一帧" aria-label="上一帧">‹</button><button id="replay-play" class="primary" disabled>播放</button><button id="replay-next" class="icon-button" title="下一帧" aria-label="下一帧">›</button></div><div class="speed" role="group" aria-label="播放速度"><button data-speed="0.5" aria-pressed="false">0.5×</button><button data-speed="1" class="active" aria-pressed="true">1×</button><button data-speed="2" aria-pressed="false">2×</button><button data-speed="4" aria-pressed="false">4×</button></div><span class="frame-label">原始记录 · 30 Hz</span></div></div>
+      </div>
+      <div id="video-viewer" role="tabpanel" aria-labelledby="video-tab" hidden><video id="policy-video" controls playsinline preload="metadata"></video><p id="video-phase"></p></div>
+    </section>
+    <p class="replay-note">展示为独立评估中选出的成功样例，整体成功率见实验信息。</p>
+    <section class="sequence"><div class="section-heading"><h2>控制阶段</h2><span>实验性控制器</span></div><div id="phases" class="moves"></div></section>
+    <details id="details" class="details"><summary><span>实验信息</span><span class="summary-hint">状态、控制与验证</span></summary><div class="details-body"><section class="evidence pen-evidence"><h2>模型与验证</h2><dl>
+      <div><dt>控制方式</dt><dd>PPO 旋转 + 固定手指调整 + 停止保持</dd></div><div><dt>整体成功率</dt><dd>4 / 4335 回合成功（0.0923%）。当前版本仍不稳定。</dd></div><div><dt>展示来源</dt><dd>独立评估中的一个成功回合，环境 856 / 1024。视频由同一段仿真轨迹重新渲染。</dd></div><div><dt>仿真配置</dt><dd>原始 XHand1 Pro 21 自由度右手；笔长 160 mm、直径 14 mm、质量 15 g；满重力。</dd></div><div><dt>停止规则</dt><dd>达到 2.05 圈后停止增加关节目标，保持当时的抓握。</dd></div><div><dt>范围</dt><dd>从一个固定抓握初态加关节扰动开始。浏览器仅回放记录，不运行物理仿真。</dd></div>
+    </dl><p id="hash" class="hash"></p></section></div></details>
+  </main>
+  <footer><span>xhand pro · 仿真回放</span><a href="https://evan715823.github.io/">Created by YIfan Hu ↗</a></footer>
+  <script>window.PEN_DEMO={"checkpoint_sha256": "97c6fe77f45879834f62a9668370e97df0354ce79add0c98baca21d98f1a8edb", "net_turns": 2.058500051498413, "seconds": 29.933333333333334, "phases": [{"frame": 0, "code": 0}, {"frame": 171, "code": 1}, {"frame": 186, "code": 2}, {"frame": 338, "code": 3}, {"frame": 486, "code": 4}], "files": {"replay": {"url": "assets/replay.json.e397df659e98e27e.gz", "bytes": 6373854, "sha256": "e397df659e98e27ed1835d379c61b2239bfc83fbff6e0ee4c957337eef4bd311"}, "video": {"url": "assets/pen_spin_two_turns.dcfd0db0a127acb5.mp4", "bytes": 11221213, "sha256": "dcfd0db0a127acb59c759daaafbc4b738464808eba6d54724ef2a19ea885714e"}, "report": {"url": "assets/pen_spin_report.99630391c23b602d.json", "bytes": 1066, "sha256": "99630391c23b602db144a3f3810c6f80575ad38ac8e8cd7adf23e7767c133044"}}};</script>
+  <script src="assets/player.c72a197d51446336.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+{
+  "source_manifest_sha256": "99043cb3c3e4091184ae5e264ef52112615b2abc998e97bde82a70d59e4b44c5",
+  "source_replay_sha256": "e397df659e98e27ed1835d379c61b2239bfc83fbff6e0ee4c957337eef4bd311",
+  "video_sha256": "dcfd0db0a127acb59c759daaafbc4b738464808eba6d54724ef2a19ea885714e",
+  "html_sha256": "57dc5d880e9ce0c736d0a12c797b5d2718eaf0d27f7b91ec46ca0ddca7d5748b",
+  "frames": 899,
+  "recording_unchanged": true,
+  "url": "https://evan715823.github.io/xhand-pen-spin-demo/",
+  "files": {
+    ".gitattributes": {
+      "bytes": 33,
+      "sha256": "386e10b53164a201e2c6f4dfb433e167fab0c579c34196a47432c1265087b52c"
+    },
+    ".nojekyll": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "README.md": {
+      "bytes": 717,
+      "sha256": "aa41776982f1fe374bb98caa92b7237b2c910a8ad3ecfb6b04919c2e298ac17a"
+    },
+    "assets/pen_spin_report.99630391c23b602d.json": {
+      "bytes": 1066,
+      "sha256": "99630391c23b602db144a3f3810c6f80575ad38ac8e8cd7adf23e7767c133044"
+    },
+    "assets/pen_spin_two_turns.dcfd0db0a127acb5.mp4": {
+      "bytes": 11221213,
+      "sha256": "dcfd0db0a127acb59c759daaafbc4b738464808eba6d54724ef2a19ea885714e"
+    },
+    "assets/player.c72a197d51446336.js": {
+      "bytes": 2108894,
+      "sha256": "c72a197d51446336d63e2e384aff3acf22ae04b23897ec77582cd81647a61c95"
+    },
+    "assets/replay.json.e397df659e98e27e.gz": {
+      "bytes": 6373854,
+      "sha256": "e397df659e98e27ed1835d379c61b2239bfc83fbff6e0ee4c957337eef4bd311"
+    },
+    "assets/style.06da17a1bbf84503.css": {
+      "bytes": 15440,
+      "sha256": "06da17a1bbf845030c9c33a435118adb9b9cc478498db29632e53af5b339942e"
+    },
+    "index.html": {
+      "bytes": 6370,
+      "sha256": "3451e1a8219893eda48d37ac2d355bde625097f0e9e8c9ddce62350e5066747c"
+    },
+    "licenses/fflate.txt": {
+      "bytes": 1069,
+      "sha256": "0a1df3a083d0c010560aa342e87959c8c1070e6fd54545741f083f22d0c8b551"
+    },
+    "licenses/three.txt": {
+      "bytes": 1081,
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    }
+  }
+}
