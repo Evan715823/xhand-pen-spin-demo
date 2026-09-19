@@ -2,7 +2,7 @@
   "source_manifest_sha256": "99043cb3c3e4091184ae5e264ef52112615b2abc998e97bde82a70d59e4b44c5",
   "source_replay_sha256": "e397df659e98e27ed1835d379c61b2239bfc83fbff6e0ee4c957337eef4bd311",
   "video_sha256": "dcfd0db0a127acb59c759daaafbc4b738464808eba6d54724ef2a19ea885714e",
-  "html_sha256": "57dc5d880e9ce0c736d0a12c797b5d2718eaf0d27f7b91ec46ca0ddca7d5748b",
+  "html_sha256": "6dd6a56c4491df43ae72ec574ba3eb15de8294ca092e8593e2bc6f7169c6cba2",
   "frames": 899,
   "recording_unchanged": true,
   "url": "https://evan715823.github.io/xhand-pen-spin-demo/",
@@ -16,8 +16,8 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     "README.md": {
-      "bytes": 717,
-      "sha256": "aa41776982f1fe374bb98caa92b7237b2c910a8ad3ecfb6b04919c2e298ac17a"
+      "bytes": 746,
+      "sha256": "3d0ba4060abfc1b59a98ca41e561eb3a081043529b58477183f70aeb52eb2c89"
     },
     "assets/pen_spin_report.99630391c23b602d.json": {
       "bytes": 1066,
@@ -27,9 +27,9 @@
       "bytes": 11221213,
       "sha256": "dcfd0db0a127acb59c759daaafbc4b738464808eba6d54724ef2a19ea885714e"
     },
-    "assets/player.c72a197d51446336.js": {
-      "bytes": 2108894,
-      "sha256": "c72a197d51446336d63e2e384aff3acf22ae04b23897ec77582cd81647a61c95"
+    "assets/player.fcb4387dd61196a4.js": {
+      "bytes": 2109041,
+      "sha256": "fcb4387dd61196a47aa7e233e34bc7bb89cab5146f709b4b9b54f9f1bd63a0dc"
     },
     "assets/replay.json.e397df659e98e27e.gz": {
       "bytes": 6373854,
@@ -41,7 +41,7 @@
     },
     "index.html": {
       "bytes": 6370,
-      "sha256": "3451e1a8219893eda48d37ac2d355bde625097f0e9e8c9ddce62350e5066747c"
+      "sha256": "a9a23c2e27f9d835926a8230484c619cf4fe98e2a9c8cd2b2911928935addefc"
     },
     "licenses/fflate.txt": {
       "bytes": 1069,
